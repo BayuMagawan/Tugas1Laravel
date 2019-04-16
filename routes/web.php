@@ -47,5 +47,8 @@ Route::get('/halaman',function(){
 	return view('konten.halaman',compact('title','konten'));
 });
 
+Route::get('/pelanggan', 'pelangganController@index');
+
+Route::get('/produk','produkController@index');
 
 
